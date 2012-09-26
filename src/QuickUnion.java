@@ -9,6 +9,7 @@ public class QuickUnion {
 
 	public QuickUnion(int n) {
 		id = new int[n];
+		size = new int[n];
 		for (int i = 0; i < n; i++) {
 			size[i] = 1; //initialize size array to 1, every element is its own root
 			id[i] = i;
